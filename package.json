@@ -1,0 +1,41 @@
+{
+  "name": "star-battles",
+  "version": "1.0.0",
+  "description": "Space game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Isom <kevin.isom@gmail.com>",
+  "license": "Private",
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "Phaser": "./node_modules/phaser/dist/phaser.min.js"
+  },
+  "browserify-shim": {
+    "Phaser": {
+      "exports": "Phaser"
+    }
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browserify": "^5.12.1",
+    "browserify-shim": "^3.7.0",
+    "es6ify": "^1.4.0",
+    "gulp": "^3.8.8",
+    "gulp-jshint": "^1.8.5",
+    "gulp-livereload": "^2.1.1",
+    "phaser": "^2.1.1",
+    "stripify": "^1.2.0",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "director": "^1.2.3",
+    "mime": "^1.2.11",
+    "stats-js": "^1.0.0-alpha1"
+  }
+}
